@@ -1,0 +1,44 @@
+{
+  "brand": "Emma Bakery",
+  "currency": "DOP",
+  "priceUnit": "unidad",
+  "whatsapp": "18495926986",
+  "products": [
+    {
+      "name": "Original",
+      "price": 200
+    },
+    {
+      "name": "Choco Heaven",
+      "price": 250
+    },
+    {
+      "name": "Red Velvet",
+      "price": 285
+    },
+    {
+      "name": "Oreo",
+      "price": 290
+    },
+    {
+      "name": "Kinder Bueno",
+      "price": 325
+    },
+    {
+      "name": "Lotus Bliss",
+      "price": 375
+    },
+    {
+      "name": "Nutella",
+      "price": 325
+    },
+    {
+      "name": "Doble Chocolate",
+      "price": 300
+    },
+    {
+      "name": "Scarlet",
+      "price": 325
+    }
+  ]
+}
