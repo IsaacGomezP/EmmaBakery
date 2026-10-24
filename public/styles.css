@@ -1,6 +1,415 @@
-:root{color-scheme:light;--cream:#fff8ef;--paper:#fffdfa;--wine:#681522;--wine-hover:#51101a;--ink:#42232a;--muted:#795e61;--rose:#f0a0b0;--line:#eadbd4;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
-*{box-sizing:border-box}html{background:var(--cream)}body{margin:0;color:var(--ink);font-size:16px;line-height:1.5}a{color:inherit;-webkit-tap-highlight-color:transparent}svg{display:block;flex-shrink:0;width:24px;height:24px}.page{width:min(460px,calc(100% - 40px));margin:0 auto}.brand{text-align:center;padding:48px 0 32px}.brand-logo{display:block;width:150px;height:150px;margin:0 auto 21px;border-radius:50%}.eyebrow{margin:0 0 9px;color:var(--muted);font-size:10px;line-height:1.6;letter-spacing:2px;text-transform:uppercase;font-weight:600}h1{margin:0;color:var(--wine);font-size:36px;font-weight:650;letter-spacing:-1.25px;line-height:1.2}h1>span{color:var(--rose)}.tagline{margin:13px 0 0;color:var(--muted);font-size:15px;line-height:1.65}.links{display:grid;gap:12px}.link-card{display:flex;align-items:center;width:100%;min-height:86px;padding:18px;gap:14px;border:1px solid var(--line);border-radius:17px;background:var(--paper);text-align:left;text-decoration:none;transition:transform 160ms ease,background-color 160ms ease,border-color 160ms ease}.link-card.primary{min-height:94px;color:var(--paper);background:var(--wine);border-color:var(--wine);box-shadow:0 5px 15px rgb(104 21 34 / 7%)}.card-icon{display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:#f8eee8;flex-shrink:0;color:var(--wine)}.card-icon>svg{width:23px;height:23px}.primary .card-icon{color:var(--paper);background:rgb(255 248 239 / 10%)}.card-copy{min-width:0;flex:1;display:grid;gap:5px}.card-copy strong{font-size:16px;font-weight:600;line-height:1.3;letter-spacing:-.15px}.card-copy small{font-size:12px;line-height:1.5;color:var(--muted)}.primary small{color:#efd9dc}.card-arrow{width:20px;height:20px}.contact{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);text-align:center;display:grid;gap:3px}.contact>span{color:var(--muted);font-size:11px}.contact>a{justify-self:center;display:flex;align-items:center;min-height:44px;font-size:14px;font-weight:550;text-decoration:none;padding:0 9px;border-radius:7px}.footer{padding:27px 0 32px;text-align:center}.footer svg{width:17px;height:17px;margin:0 auto 10px;color:var(--wine)}.footer p{margin:0;color:var(--muted);font-size:11px;line-height:1.5}.footer>span{display:block;margin-top:7px;color:var(--muted);font-size:9px;letter-spacing:1.6px;text-transform:uppercase}a:focus-visible{outline:3px solid var(--wine);outline-offset:5px}.back-link{display:inline-flex;align-items:center;gap:8px;min-height:48px;margin-top:18px;text-decoration:none;color:var(--muted);font-size:12px;border-radius:6px}.back-link svg{width:16px;height:16px;transform:rotate(180deg)}.menu-header{text-align:center;padding:21px 0 33px}.menu-header img{display:block;margin:0 auto 24px;border-radius:50%}.menu-header h1{font-size:33px;letter-spacing:-1px}.menu-header .tagline{font-size:13px}.menu-note{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:0 0 14px;font-size:10px;color:var(--muted)}.menu-note span:first-child{text-transform:uppercase;letter-spacing:1.2px;font-weight:600}.flavors{padding:0;margin:0;list-style:none;border-top:1px solid var(--line)}.flavor{display:flex;align-items:center;gap:14px;min-height:94px;padding:18px 1px;border-bottom:1px solid var(--line);scroll-margin-top:24px}.flavor-number{align-self:flex-start;margin-top:8px;font-size:9px;color:var(--muted)}.flavor h2{flex:1;margin:0;font-size:19px;font-weight:550;line-height:1.3;letter-spacing:-.45px}.flavor-order{text-align:right;display:grid;gap:1px;justify-items:end}.price{font-size:15px;font-weight:650;color:var(--wine);white-space:nowrap}.flavor-order>a{display:inline-flex;gap:5px;align-items:center;min-height:36px;border-radius:6px;padding:0 0 0 8px;font-size:11px;color:var(--muted);text-decoration:none}.flavor-order svg{width:13px;height:13px}.menu-help{text-align:center;padding:29px 20px;margin:29px 0 0;background:#f6ece3;border-radius:17px}.menu-help p{margin:0 0 6px;font-size:17px;font-weight:600;color:var(--wine)}.menu-help>span{display:block;font-size:12px;color:var(--muted);line-height:1.7}.text-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;margin-top:12px;color:var(--wine);font-size:12px;font-weight:600;text-decoration:none;border-radius:6px}.text-link svg{width:16px;height:16px}
-@media(hover:hover){.link-card:hover{transform:translateY(-2px);border-color:#cfb5b2}.primary:hover{background:var(--wine-hover);border-color:var(--wine-hover)}.contact>a:hover,.back-link:hover,.text-link:hover,.flavor-order>a:hover{text-decoration:underline;text-underline-offset:4px}}
-@media(min-width:720px){.brand{padding-top:54px}.footer{padding-bottom:40px}}
-@media(max-width:360px){.page{width:calc(100% - 32px)}.brand{padding-top:32px}.brand-logo{width:132px;height:132px}h1{font-size:33px}.link-card{gap:11px;padding:16px 14px}.card-icon{width:38px;height:38px}.card-copy strong{font-size:15px}.card-copy small{font-size:11px}.menu-header h1{font-size:30px}.menu-note{font-size:9px}.flavor{gap:11px}.flavor h2{font-size:18px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.link-card:hover{transform:none}}
+:root {
+  color-scheme: light;
+  --cream: #fff8ef;
+  --paper: #fffdfa;
+  --wine: #681522;
+  --wine-hover: #51101a;
+  --ink: #42232a;
+  --muted: #795e61;
+  --rose: #f0a0b0;
+  --line: #eadbd4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--cream);
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+svg {
+  display: block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.page {
+  width: min(460px, calc(100% - 40px));
+  margin: 0 auto;
+}
+.brand {
+  text-align: center;
+  padding: 48px 0 32px;
+}
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 21px;
+  border-radius: 50%;
+}
+.eyebrow {
+  margin: 0 0 9px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+h1 {
+  margin: 0;
+  color: var(--wine);
+  font-size: 36px;
+  font-weight: 650;
+  letter-spacing: -1.25px;
+  line-height: 1.2;
+}
+h1 > span {
+  color: var(--rose);
+}
+.tagline {
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.links {
+  display: grid;
+  gap: 12px;
+}
+.link-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 86px;
+  padding: 18px;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--paper);
+  text-align: left;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+.link-card.primary {
+  min-height: 94px;
+  color: var(--paper);
+  background: var(--wine);
+  border-color: var(--wine);
+  box-shadow: 0 5px 15px rgb(104 21 34 / 7%);
+}
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 13px;
+  background: #f8eee8;
+  flex-shrink: 0;
+  color: var(--wine);
+}
+.card-icon > svg {
+  width: 23px;
+  height: 23px;
+}
+.primary .card-icon {
+  color: var(--paper);
+  background: rgb(255 248 239 / 10%);
+}
+.card-copy {
+  min-width: 0;
+  flex: 1;
+  display: grid;
+  gap: 5px;
+}
+.card-copy strong {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.15px;
+}
+.card-copy small {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.primary small {
+  color: #efd9dc;
+}
+.card-arrow {
+  width: 20px;
+  height: 20px;
+}
+.contact {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  display: grid;
+  gap: 3px;
+}
+.contact > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.contact > a {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 550;
+  text-decoration: none;
+  padding: 0 9px;
+  border-radius: 7px;
+}
+.footer {
+  padding: 27px 0 32px;
+  text-align: center;
+}
+.footer svg {
+  width: 17px;
+  height: 17px;
+  margin: 0 auto 10px;
+  color: var(--wine);
+}
+.footer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.footer > span {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+a:focus-visible {
+  outline: 3px solid var(--wine);
+  outline-offset: 5px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  margin-top: 18px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 12px;
+  border-radius: 6px;
+}
+.back-link svg {
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+.menu-header {
+  text-align: center;
+  padding: 21px 0 33px;
+}
+.menu-header img {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+.menu-header h1 {
+  font-size: 33px;
+  letter-spacing: -1px;
+}
+.menu-header .tagline {
+  font-size: 13px;
+}
+.menu-note {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 0 0 14px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.menu-note span:first-child {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+.flavors {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.flavor {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 94px;
+  padding: 18px 1px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 24px;
+}
+.flavor-number {
+  align-self: flex-start;
+  margin-top: 8px;
+  font-size: 9px;
+  color: var(--muted);
+}
+.flavor h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 550;
+  line-height: 1.3;
+  letter-spacing: -0.45px;
+}
+.flavor-order {
+  text-align: right;
+  display: grid;
+  gap: 1px;
+  justify-items: end;
+}
+.price {
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--wine);
+  white-space: nowrap;
+}
+.flavor-order > a {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  min-height: 36px;
+  border-radius: 6px;
+  padding: 0 0 0 8px;
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.flavor-order svg {
+  width: 13px;
+  height: 13px;
+}
+.menu-help {
+  text-align: center;
+  padding: 29px 20px;
+  margin: 29px 0 0;
+  background: #f6ece3;
+  border-radius: 17px;
+}
+.menu-help p {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--wine);
+}
+.menu-help > span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  margin-top: 12px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.text-link svg {
+  width: 16px;
+  height: 16px;
+}
+@media (hover: hover) {
+  .link-card:hover {
+    transform: translateY(-2px);
+    border-color: #cfb5b2;
+  }
+  .primary:hover {
+    background: var(--wine-hover);
+    border-color: var(--wine-hover);
+  }
+  .contact > a:hover,
+  .back-link:hover,
+  .text-link:hover,
+  .flavor-order > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+@media (min-width: 720px) {
+  .brand {
+    padding-top: 54px;
+  }
+  .footer {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .page {
+    width: calc(100% - 32px);
+  }
+  .brand {
+    padding-top: 32px;
+  }
+  .brand-logo {
+    width: 132px;
+    height: 132px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  .link-card {
+    gap: 11px;
+    padding: 16px 14px;
+  }
+  .card-icon {
+    width: 38px;
+    height: 38px;
+  }
+  .card-copy strong {
+    font-size: 15px;
+  }
+  .card-copy small {
+    font-size: 11px;
+  }
+  .menu-header h1 {
+    font-size: 30px;
+  }
+  .menu-note {
+    font-size: 9px;
+  }
+  .flavor {
+    gap: 11px;
+  }
+  .flavor h2 {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .link-card:hover {
+    transform: none;
+  }
+}

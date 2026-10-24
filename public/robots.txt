@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emmabakery.netlify.app/sitemap.xml
+Sitemap: https://emmabakerys.netlify.app/sitemap.xml
