@@ -7,7 +7,8 @@ Sitio público de Emma Bakery: enlaces de pedidos y contacto, Instagram y menú 
 ## Contenido y publicación
 
 - `public/index.html`: portada de enlaces.
-- `public/menu.html`: menú y enlaces de WhatsApp para cada sabor.
+- `public/menu.html`: menú con carrito, cantidades y subtotal.
+- `public/cart.js`: carrito guardado en el navegador, mensaje de WhatsApp y parallax accesible.
 - `public/menu.json`: lista de productos, precios en DOP y número empresarial.
 - `public/styles.css`: diseño adaptable crema, vino y rosa.
 - `public/assets/emma-bakery-logo.png`: logo original de la marca.
@@ -17,6 +18,10 @@ Sitio público de Emma Bakery: enlaces de pedidos y contacto, Instagram y menú 
 No requiere dependencias ni compilación. Netlify debe publicar la carpeta `public`, sin comando de construcción. La rama de producción es `main`.
 
 WhatsApp empresarial: **+1 (849) 592-6986**. Los enlaces abren un mensaje preparado; la persona decide cuándo enviarlo. Instagram: [@emmabakerys](https://www.instagram.com/emmabakerys/).
+
+El carrito permite agregar hasta 99 unidades por sabor, ajustar cantidades, eliminar productos y vaciar el pedido. Guarda únicamente identificadores y cantidades en el navegador. Usa los precios actuales del menú para calcular el subtotal; no incluye entrega ni confirma disponibilidad. Continuar abre WhatsApp con el resumen para que el cliente lo envíe. Sin JavaScript, conserva enlaces individuales por sabor. El parallax se desactiva con la preferencia de reducir movimiento del dispositivo.
+
+Los datos bancarios se comparten únicamente por WhatsApp y no deben añadirse a este repositorio público.
 
 Sitio: <https://emmabakerys.netlify.app/>. Correo: **emmabakery30@gmail.com**. Negocio virtual en Villa Carmen, Santo Domingo Este, con horario de 24 horas confirmado por el propietario.
 
