@@ -11,6 +11,7 @@ Sitio público de Emma Bakery: enlaces de pedidos y contacto, Instagram y menú 
 - `public/menu.json`: lista de productos, precios en DOP y número empresarial.
 - `public/styles.css`: diseño adaptable crema, vino y rosa.
 - `public/assets/emma-bakery-logo.png`: logo original de la marca.
+- `public/assets/cookies/`: nueve imágenes WebP aportadas por el propietario, conservadas sin modificar.
 - `netlify.toml`: publicación de `public/` y cabeceras del sitio.
 
 No requiere dependencias ni compilación. Netlify debe publicar la carpeta `public`, sin comando de construcción. La rama de producción es `main`.
@@ -25,4 +26,4 @@ Los sabores y precios fueron confirmados por el propietario. Si cambian, actuali
 
 Este repositorio contiene únicamente el sitio público. Los pedidos internos, respaldos de clientes, credenciales y base de datos se mantienen fuera de este repositorio y de la carpeta publicada.
 
-El menú de la web funciona de forma independiente del catálogo de WhatsApp Business. Ese catálogo debe cargarse y verificarse en la cuenta empresarial antes de enlazarlo como catálogo activo.
+El menú de la web funciona de forma independiente del catálogo de WhatsApp Business. Los nueve artículos se cargaron en la cuenta empresarial con imagen, precio por unidad en la descripción, enlace del sabor y código EMMA-001 a EMMA-009. WhatsApp revisa los artículos antes de mostrarlos a los clientes; su aprobación se gestiona en la cuenta empresarial.

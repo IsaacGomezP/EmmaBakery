@@ -249,6 +249,153 @@ a:focus-visible {
   list-style: none;
   border-top: 1px solid var(--line);
 }
+
+.photo-menu {
+  width: min(940px, calc(100% - 40px));
+}
+
+.photo-menu .menu-header {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  background: var(--paper);
+  scroll-margin-top: 24px;
+}
+
+.product-image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1.12;
+  padding: 20px;
+  background: #f6ece1;
+}
+
+.product:nth-child(3n) .product-image {
+  background: #f8e8e7;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.product-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 19px;
+}
+
+.product-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 9px;
+}
+
+.product-title h2 {
+  margin: 0;
+  color: var(--wine);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.product-title .price {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.product-copy > p {
+  flex: 1;
+  margin: 12px 0 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.product-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: var(--wine);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.product-cta svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 760px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .product-copy {
+    padding: 14px;
+  }
+  .product-title {
+    flex-wrap: wrap;
+    gap: 5px 12px;
+  }
+  .product-title h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .product-image {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .photo-menu {
+    width: calc(100% - 32px);
+  }
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-image {
+    aspect-ratio: 1.4;
+    padding: 20px 40px;
+  }
+  .product-image img {
+    max-height: 200px;
+  }
+  .product-title {
+    flex-wrap: nowrap;
+  }
+  .product-title h2 {
+    width: auto;
+  }
+}
 .flavor {
   display: flex;
   align-items: center;

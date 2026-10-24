@@ -6,39 +6,57 @@
   "products": [
     {
       "name": "Original",
-      "price": 200
+      "price": 200,
+      "description": "Masa de vainilla con chispas de chocolate de leche y semi-amargas.",
+      "image": "/assets/cookies/original.webp"
     },
     {
       "name": "Choco Heaven",
-      "price": 250
+      "price": 250,
+      "description": "Masa de chocolate, chocolate de leche, semi-amargo y toque de sal.",
+      "image": "/assets/cookies/choco-heaven.webp"
     },
     {
       "name": "Red Velvet",
-      "price": 285
+      "price": 285,
+      "description": "Masa red velvet, chispas de chocolate blanco y toque de vainilla.",
+      "image": "/assets/cookies/red-velvet.webp"
     },
     {
       "name": "Oreo",
-      "price": 290
+      "price": 290,
+      "description": "Masa de vainilla con trozos de Oreo y chispas de chocolate.",
+      "image": "/assets/cookies/oreo.webp"
     },
     {
       "name": "Kinder Bueno",
-      "price": 325
+      "price": 325,
+      "description": "Masa de vainilla con crema de avellanas, Kinder Bueno y chocolate.",
+      "image": "/assets/cookies/kinder-bueno.webp"
     },
     {
       "name": "Lotus Bliss",
-      "price": 375
+      "price": 375,
+      "description": "Masa de vainilla, crema y trozos de Lotus con toque de caramelo.",
+      "image": "/assets/cookies/lotus-bliss.webp"
     },
     {
       "name": "Nutella",
-      "price": 325
+      "price": 325,
+      "description": "Masa de vainilla con crema Nutella y trozos de chocolate.",
+      "image": "/assets/cookies/nutella.webp"
     },
     {
       "name": "Doble Chocolate",
-      "price": 300
+      "price": 300,
+      "description": "Masa de chocolate con chispas de leche y semi-amargas.",
+      "image": "/assets/cookies/doble-chocolate.webp"
     },
     {
       "name": "Scarlet",
-      "price": 325
+      "price": 325,
+      "description": "Masa red velvet con relleno de queso crema y chocolate blanco.",
+      "image": "/assets/cookies/scarlet.webp"
     }
   ]
 }
