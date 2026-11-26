@@ -6,21 +6,22 @@
     <meta name="theme-color" content="#fff8ef" />
     <meta
       name="description"
-      content="Descubre los nueve sabores de galletas de Emma Bakery, consulta sus precios por unidad y pide por WhatsApp."
+      content="Descubre el menú de Emma Bakery, consulta sus precios y pide por WhatsApp."
     />
-    <title>Menú de galletas · Emma Bakery</title>
-    <link rel="canonical" href="https://emmabakerys.netlify.app/menu.html" />
+    <title>Menú · Emma Bakery</title>
+
+    <link rel="canonical" href="https://emmabakerys.netlify.app/menu" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_DO" />
     <meta property="og:site_name" content="Emma Bakery" />
-    <meta property="og:title" content="Menú de galletas · Emma Bakery" />
+    <meta property="og:title" content="Menú · Emma Bakery" />
     <meta
       property="og:description"
-      content="Descubre los nueve sabores de galletas de Emma Bakery, consulta sus precios por unidad y pide por WhatsApp."
+      content="Descubre el menú de Emma Bakery, consulta sus precios y pide por WhatsApp."
     />
     <meta
       property="og:url"
-      content="https://emmabakerys.netlify.app/menu.html"
+      content="https://emmabakerys.netlify.app/menu"
     />
     <meta
       property="og:image"
@@ -29,8 +30,9 @@
     <meta property="og:image:alt" content="Emma Bakery" />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/png" href="/assets/emma-bakery-logo.png" />
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/cart.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/menu.css">
+
   </head>
   <body>
     <main class="page menu-page photo-menu">
@@ -49,17 +51,18 @@
         </svg>
         Volver a Emma Bakery</a
       >
-      <header class="menu-header">
-        <img
-          src="/assets/emma-bakery-logo.png"
-          width="90"
-          height="90"
-          alt="Emma Bakery"
-        />
-        <p class="eyebrow">Un antojo para cada gusto</p>
-        <h1>Nuestras galletas<span aria-hidden="true">.</span></h1>
-        <p class="tagline">Elige tus favoritos y arma tu pedido.</p>
-      </header>
+      <header class="emma-menu-hero"><div class="menu-intro"><p class="eyebrow">EMMA BAKERY</p><h1>El menú<br>de <em>Emma.</em></h1><p class="menu-slogan">Aquí medimos con el corazón</p><a class="menu-explore" href="#original">Descubre el menú</a></div>
+        <div class="emma-character">
+          <span class="emma-orbit" aria-hidden="true"></span>
+          <div class="emma-portrait">
+            <img src="/assets/emma-character.webp" alt="Emma disfrutando una galleta" width="850" height="777" fetchpriority="high">
+            <canvas width="420" height="460" aria-hidden="true"></canvas>
+            <span class="emma-crumb" aria-hidden="true"></span>
+            <span class="emma-crumb" aria-hidden="true"></span>
+            <span class="emma-crumb" aria-hidden="true"></span>
+          </div>
+          <button type="button" class="emma-pause" aria-label="Pausar animación de Emma" hidden></button>
+        </div></header>
       <div class="menu-note">
         <span>El menú de Emma</span><span>Precios por unidad · RD$</span>
       </div>
@@ -481,7 +484,7 @@
             ></noscript>
           </div>
         </li>
-      </ul>
+      <li class="product" id="nuevo-0"><div class="product-image"><img src="/assets/nuevo-0.webp" alt="3 Leches Clásico (cereza)" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>3 Leches Clásico (cereza)</h2><span class="price">RD$275</span></div><p>Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de cereza.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar 3 Leches Clásico (cereza) al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+3+Leches+Cl%C3%A1sico+%28cereza%29.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-1"><div class="product-image"><img src="/assets/nuevo-1.webp" alt="3 Leches de Coco" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>3 Leches de Coco</h2><span class="price">RD$300</span></div><p>Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de ralladura de coco.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar 3 Leches de Coco al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+3+Leches+de+Coco.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-2"><div class="product-image"><img src="/assets/nuevo-2.webp" alt="3 Leches de Fresa" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>3 Leches de Fresa</h2><span class="price">RD$325</span></div><p>Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de fresas.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar 3 Leches de Fresa al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+3+Leches+de+Fresa.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-3"><div class="product-image"><img src="/assets/nuevo-3.webp" alt="Brownie Clásico" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Brownie Clásico</h2><span class="price">RD$100</span></div><p>Intensamente chocolatosos, con una superficie ligeramente crujiente y un interior húmedo, suave y lleno de sabor a chocolate.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Brownie Clásico al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Brownie+Cl%C3%A1sico.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-4"><div class="product-image"><img src="/assets/nuevo-4.webp" alt="Brookie" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Brookie</h2><span class="price">RD$160</span></div><p>La combinación perfecta de dos favoritos: una capa de brownie de chocolate y una deliciosa masa de galleta. ¡Dos texturas irresistibles en un solo postre!</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Brookie al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Brookie.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-5"><div class="product-image"><img src="/assets/nuevo-5.webp" alt="Matilda Cake (porción)" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Matilda Cake (porción)</h2><span class="price">RD$300</span></div><p>Un delicioso pastel de chocolate con capas de bizcocho húmedo y abundante cobertura cremosa de chocolate. Una experiencia irresistible para los verdaderos amantes del chocolate.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Matilda Cake (porción) al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Matilda+Cake+%28porci%C3%B3n%29.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-6"><div class="product-image"><img src="/assets/nuevo-6.webp" alt="Bizcocho Dominicano (porción)" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Bizcocho Dominicano (porción)</h2><span class="price">RD$275</span></div><p>El clásico que nunca pasa de moda. Bizcocho suave, esponjoso y delicado, con ese sabor tradicional que tanto nos encanta.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Bizcocho Dominicano (porción) al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Bizcocho+Dominicano+%28porci%C3%B3n%29.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-7"><div class="product-image"><img src="/assets/nuevo-7.webp" alt="Muffin de Chocolate" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Muffin de Chocolate</h2><span class="price">RD$125</span></div><p>Muffins suaves, esponjosos y con un delicioso sabor a chocolate. Perfectos para acompañar cualquier momento del día.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Muffin de Chocolate al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Muffin+de+Chocolate.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-8"><div class="product-image"><img src="/assets/nuevo-8.webp" alt="Muffin de Maíz" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Muffin de Maíz</h2><span class="price">RD$100</span></div><p>Suaves, tiernos y con el auténtico sabor del maíz. Una opción deliciosa para quienes disfrutan de los sabores tradicionales.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Muffin de Maíz al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Muffin+de+Ma%C3%ADz.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-9"><div class="product-image"><img src="/assets/nuevo-9.webp" alt="White Pecan New York Cookie" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>White Pecan New York Cookie</h2><span class="price">RD$375</span></div><p>Una auténtica New York Cookie, gruesa y deliciosa, elaborada con nueces pecanas y chocolate blanco. Su interior esconde un relleno cremoso de ganache de chocolate blanco con pecanas.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar White Pecan New York Cookie al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+White+Pecan+New+York+Cookie.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li><li class="product" id="nuevo-10"><div class="product-image"><img src="/assets/nuevo-10.webp" alt="Nutella Crunch New York Cookie" width="1024" height="1024" loading="lazy" decoding="async"></div><div class="product-copy"><div class="product-title"><h2>Nutella Crunch New York Cookie</h2><span class="price">RD$350</span></div><p>Una irresistible combinación de masa Red Velvet y vainilla, con un atractivo contraste de tonos rojos y claros. En su interior encontrarás un relleno de Nutella crocante que aporta una explosión de sabor y textura en cada bocado.</p><button type="button" class="product-cta add-to-cart" aria-label="Agregar Nutella Crunch New York Cookie al carrito" hidden>Agregar al carrito +</button><noscript><a class="product-cta" href="https://wa.me/18495926986?text=Hola%2C+Emma+Bakery.+Quisiera+pedir+Nutella+Crunch+New+York+Cookie.+%C2%BFMe+confirman+disponibilidad%3F" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a></noscript></div></li></ul>
       <aside class="menu-help">
         <p>¿No sabes cuál elegir?</p>
         <span>Escríbenos para consultar sabores, disponibilidad y entrega.</span
@@ -552,13 +555,10 @@
           ×
         </button>
       </div>
-      <p id="cart-empty">
-        Tu carrito está vacío. Elige tus galletas favoritas para comenzar.
+<div class="cart-scroll">      <p id="cart-empty">
+        Tu carrito está vacío. Elige tus productos favoritos para comenzar.
       </p>
       <ul id="cart-items" class="cart-items"></ul>
-      <div class="cart-summary">
-        <span>Subtotal</span><strong id="cart-total">RD$0</strong>
-      </div>
       <fieldset id="payment-options" class="payment-options" hidden>
         <legend>¿Cómo prefieres pagar? <span>Opcional</span></legend>
         <div class="payment-choices">
@@ -589,7 +589,10 @@
           Los datos de la cuenta se comparten por WhatsApp al confirmar el
           pedido.
         </p>
-      </fieldset>
+      </fieldset></div><div class="cart-footer">      <div class="cart-summary">
+        <span>Subtotal</span><strong id="cart-total">RD$0</strong>
+      </div>
+
       <p class="cart-disclaimer">
         Entrega no incluida. Te confirmaremos disponibilidad, total final y
         entrega por WhatsApp.
@@ -605,6 +608,6 @@
       <button class="clear-cart" type="button" id="clear-cart" hidden>
         Vaciar carrito
       </button>
-    </dialog>
-  </body>
+</div>    </dialog>
+  <script src="/cart.js" defer></script><script src="/emma-motion.js" defer></script></body>
 </html>

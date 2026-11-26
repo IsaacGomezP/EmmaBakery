@@ -57,6 +57,72 @@
       "price": 325,
       "description": "Masa red velvet con relleno de queso crema y chocolate blanco.",
       "image": "/assets/cookies/scarlet.webp"
+    },
+    {
+      "name": "3 Leches Clásico (cereza)",
+      "price": 275,
+      "description": "Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de cereza.",
+      "image": "/assets/nuevo-0.webp"
+    },
+    {
+      "name": "3 Leches de Coco",
+      "price": 300,
+      "description": "Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de ralladura de coco.",
+      "image": "/assets/nuevo-1.webp"
+    },
+    {
+      "name": "3 Leches de Fresa",
+      "price": 325,
+      "description": "Bizcocho suave y esponjoso, bañado en una deliciosa mezcla de tres leches que le aporta una textura húmeda y cremosa. Con topping de fresas.",
+      "image": "/assets/nuevo-2.webp"
+    },
+    {
+      "name": "Brownie Clásico",
+      "price": 100,
+      "description": "Intensamente chocolatosos, con una superficie ligeramente crujiente y un interior húmedo, suave y lleno de sabor a chocolate.",
+      "image": "/assets/nuevo-3.webp"
+    },
+    {
+      "name": "Brookie",
+      "price": 160,
+      "description": "La combinación perfecta de dos favoritos: una capa de brownie de chocolate y una deliciosa masa de galleta. ¡Dos texturas irresistibles en un solo postre!",
+      "image": "/assets/nuevo-4.webp"
+    },
+    {
+      "name": "Matilda Cake (porción)",
+      "price": 300,
+      "description": "Un delicioso pastel de chocolate con capas de bizcocho húmedo y abundante cobertura cremosa de chocolate. Una experiencia irresistible para los verdaderos amantes del chocolate.",
+      "image": "/assets/nuevo-5.webp"
+    },
+    {
+      "name": "Bizcocho Dominicano (porción)",
+      "price": 275,
+      "description": "El clásico que nunca pasa de moda. Bizcocho suave, esponjoso y delicado, con ese sabor tradicional que tanto nos encanta.",
+      "image": "/assets/nuevo-6.webp"
+    },
+    {
+      "name": "Muffin de Chocolate",
+      "price": 125,
+      "description": "Muffins suaves, esponjosos y con un delicioso sabor a chocolate. Perfectos para acompañar cualquier momento del día.",
+      "image": "/assets/nuevo-7.webp"
+    },
+    {
+      "name": "Muffin de Maíz",
+      "price": 100,
+      "description": "Suaves, tiernos y con el auténtico sabor del maíz. Una opción deliciosa para quienes disfrutan de los sabores tradicionales.",
+      "image": "/assets/nuevo-8.webp"
+    },
+    {
+      "name": "White Pecan New York Cookie",
+      "price": 375,
+      "description": "Una auténtica New York Cookie, gruesa y deliciosa, elaborada con nueces pecanas y chocolate blanco. Su interior esconde un relleno cremoso de ganache de chocolate blanco con pecanas.",
+      "image": "/assets/nuevo-9.webp"
+    },
+    {
+      "name": "Nutella Crunch New York Cookie",
+      "price": 350,
+      "description": "Una irresistible combinación de masa Red Velvet y vainilla, con un atractivo contraste de tonos rojos y claros. En su interior encontrarás un relleno de Nutella crocante que aporta una explosión de sabor y textura en cada bocado.",
+      "image": "/assets/nuevo-10.webp"
     }
   ]
 }

@@ -106,7 +106,10 @@
       const lineTotal = document.createElement("strong");
       lineTotal.className = "line-total";
       lineTotal.textContent = money(quantity * product.price);
-      item.append(info, controls, lineTotal);
+      const thumb = document.createElement('img');
+      thumb.src = product.card.querySelector('img').src;
+      thumb.alt = ''; thumb.className = 'cart-thumb';
+      item.append(thumb, info, controls, lineTotal);
       holder.append(item);
     }
     if (focus) {
@@ -140,8 +143,21 @@
     }
     $("#cart-toggle").setAttribute(
       "aria-label",
-      `Ver mi carrito, ${count} galletas, ${money(total)}`,
+      `Ver mi carrito, ${count} productos, ${money(total)}`,
     );
+  }
+  function flyBag(source) {
+    const target = $('#cart-toggle');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const a = source.getBoundingClientRect(), b = target.getBoundingClientRect();
+    const bag = document.createElement('div'); bag.className = 'flying-bag';
+    bag.setAttribute('aria-hidden','true');
+    bag.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20s-8-5-8-10a4 4 0 0 1 8-2 4 4 0 0 1 8 2c0 5-8 10-8 10Z"/></svg>';
+    const x=a.left+a.width/2-21, y=a.top+a.height/2-23;
+    bag.style.left=x+'px';bag.style.top=y+'px';document.body.append(bag);
+    const dx=b.left+b.width/2-21-x, dy=b.top+b.height/2-23-y;
+    const flight=bag.animate([{transform:'translate(0,0) rotate(-10deg)',opacity:1},{transform:`translate(${dx*.45}px,${Math.min(-90,dy*.5-70)}px) rotate(12deg) scale(.9)`,opacity:1,offset:.45},{transform:`translate(${dx}px,${dy}px) rotate(0) scale(.2)`,opacity:0}],{duration:650,easing:'cubic-bezier(.3,.1,.6,1)'});
+    flight.onfinish=()=>{bag.remove();target.animate([{scale:1},{scale:1.08},{scale:1}],{duration:300});};
   }
   for (const product of products) {
     const add = product.card.querySelector(".add-to-cart");
@@ -149,22 +165,27 @@
     add.addEventListener("click", () => {
       const old = cart.get(product.id) || 0;
       change(product.id, 1);
+      if(old < 99) flyBag(add);
       $("#cart-status").textContent =
         old >= 99
           ? "Máximo 99 unidades por sabor. Para pedidos mayores, escríbenos."
           : product.name +
             " agregada al carrito. " +
             $("#cart-count").textContent +
-            " galletas en tu pedido.";
+            " productos en tu pedido.";
     });
   }
+  const bagIcon = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h3l3 12h11l3-9H6"/><path d="M8 15l-1 3h13"/><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/></svg>';
+  $('#cart-toggle').insertAdjacentHTML('afterbegin',bagIcon);
+  $('#cart-toggle').setAttribute('aria-expanded','false');
   $("#cart-toggle").hidden = false;
   $("#cart-toggle").addEventListener("click", (event) => {
     lastTrigger = event.currentTarget;
     dialog.showModal();
+    $("#cart-toggle").setAttribute("aria-expanded","true");
   });
   $("#cart-close").addEventListener("click", () => dialog.close());
-  dialog.addEventListener("close", () => lastTrigger?.focus());
+  dialog.addEventListener("close", () => {$("#cart-toggle").setAttribute("aria-expanded","false");lastTrigger?.focus();});
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) {
       const rect = dialog.getBoundingClientRect();
